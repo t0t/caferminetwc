@@ -69,6 +69,57 @@ function register_my_menus() {
 }
 add_action( 'init', 'register_my_menus' );
 
+
+/**
+ * ----------------------------------------------------------------------------------------
+ * 4.0 - Set up theme default and register various supported features.
+ * ----------------------------------------------------------------------------------------
+ */
+if ( ! function_exists( 'alpha_setup' ) ) {
+	function alpha_setup() {
+		/**
+		 * Make the theme available for translation.
+		 */
+		$lang_dir = THEMEROOT . '/languages';
+		load_theme_textdomain( 'alpha', $lang_dir );
+
+		/**
+		 * Add support for post formats.
+		 */
+		add_theme_support( 'post-formats',
+			array(
+				'gallery',
+				'link',
+				'image',
+				'quote',
+				'video',
+				'audio'
+			)
+		);
+
+		/**
+		 * Add support for automatic feed links.
+		 */
+		add_theme_support( 'automatic-feed-links' );
+
+		/**
+		 * Add support for post thumbnails.
+		 */
+		add_theme_support( 'post-thumbnails' );
+
+		/**
+		 * Register nav menus.
+		 */
+		register_nav_menus(
+			array(
+				'main-menu' => __( 'Main Menu', 'alpha' )
+			)
+		);
+	}
+
+	add_action( 'after_setup_theme', 'alpha_setup' );
+}
+
 /**
  * ----------------------------------------------------------------------------------------
  * 10.0 - Load the custom scripts for the theme.

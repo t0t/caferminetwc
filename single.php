@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <?php if(have_posts()): ?>
     <?php while(have_posts()): the_post(); ?>
-        <div class="main"> 
+      <main class="site-main" role="main">
             <div class="post">
                 <h2><?php the_title(); ?></h2>
                 <div class="content"><?php the_content(); ?></div>
@@ -17,7 +17,7 @@
                 <div class="nav-prev"><?php previous_post_link('&laquo; %link') ?></div>
                 <div class="nav-next"><?php next_post_link('%link &raquo;') ?></div>
             </div>
-        </div>
+        </main>
     <?php endwhile; ?>
 <?php else: ?>
     <h2>There were no results that matched your request</h2>

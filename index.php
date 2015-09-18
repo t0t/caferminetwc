@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 <?php if(have_posts()): ?>
-    <div class="main"> 
+  <main class="site-main" role="main">
         <?php while(have_posts()): the_post(); ?>
             <div class="post">
                 <h2 class="title">
                     <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
                 </h2>
-				<div class="date"><?php the_time('l, j F, Y') ?></div>
+				<div><?php the_time('l, j F, Y') ?></div>
                 <div class="content">
                     <?php the_content(); ?>
                 </div>
@@ -20,13 +20,13 @@
 				<?php previous_posts_link('Newer Entries &raquo;') ?>
 			</div>
 		</div>
-    </div>
+  </main>
 <?php else: ?>
-    <div class="main">
+    <main class="site-main" role="main">
         <h2>There were no results that matched your request</h2>
         <p>Do you want to search for it?</p>
         <?php get_search_form(); ?>
-     </div>
+     </main>
 <?php endif; ?>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
