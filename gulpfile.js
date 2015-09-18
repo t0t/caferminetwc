@@ -6,12 +6,26 @@ var gulp      = require('gulp'),
   uglify      = require('gulp-uglify'),
   sass        = require('gulp-sass'),
   maps        = require('gulp-sourcemaps'),
-  csso        = require('gulp-csso')
+  csso        = require('gulp-csso');
+  // jshint      = require('gulp-jshint');
   // ghPages     = require('gulp-gh-pages'),
   // minifyHTML  = require('gulp-minify-html'),
   // del         = require('del'),
   // jade        = require('gulp-jade'),
   // babel       = require('gulp-babel');
+
+
+
+
+
+
+// lint
+// gulp.task('lint', function() {
+//   return gulp.src('./lib/*.js')
+//     .pipe(jshint())
+//     .pipe(jshint.reporter('YOUR_REPORTER_HERE'));
+// });
+
 
 
 // concat Js
@@ -26,9 +40,9 @@ gulp.task('concatJs', function() {
 
 // compile Sass
 gulp.task('compileSass', function() {
-  return gulp.src('assets/sass/style.scss')
-    .pipe(sass())
+  return gulp.src(['assets/sass/*.scss','assets/sass/**/*.scss'])
     .pipe(maps.init())
+    .pipe(sass({outputStyle: 'nested'}))
     .pipe(maps.write('./'))
     .pipe(gulp.dest('./'));
 });
