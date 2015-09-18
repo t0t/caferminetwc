@@ -10,6 +10,7 @@
 * [Sass](http://sass-lang.com/)
 * Gulp `gulp watch` tasks
 * Woocommerce ready
+* Wordpress workflow
 
 ;)
 Sergio Forés - FullStack Web Designer

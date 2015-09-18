@@ -76,8 +76,8 @@ add_action( 'init', 'register_my_menus' );
  */
 if ( ! function_exists( 'alpha_scripts' ) ) {
 	function alpha_scripts() {
-		wp_register_script( 'alpha-custom', SCRIPTS . '/build.js', array( 'jquery' ), false, true );
-		wp_enqueue_style( 'alpha-master', THEMEROOT );
+		wp_register_script( 'alpha-custom', SCRIPTS . '/build.js', array( '' ), false, true );
+		wp_enqueue_style( 'alpha-master', THEMEROOT . '/style.css', false );
 	}
 
 	add_action( 'wp_enqueue_scripts', 'alpha_scripts' );
