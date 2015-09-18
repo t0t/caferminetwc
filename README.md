@@ -9,7 +9,8 @@
 * [BEM. Block, Element, Modifier](https://bem.info/method/)
 * [Sass](http://sass-lang.com/)
 * Gulp `gulp watch` tasks
-* Woocommerce ready
+* BrowserSync!
+* WooCommerce ready
 * Wordpress workflow
 
 ;)
