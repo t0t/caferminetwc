@@ -1,0 +1,17 @@
+header {}
+
+.site-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: $color-alt;
+    padding: $padding_base / 6;
+
+    @media screen and (min-width: 1475px) {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: flex-start;
+        align-items: inherit;
+        flex: 1 219px;
+    }
+}

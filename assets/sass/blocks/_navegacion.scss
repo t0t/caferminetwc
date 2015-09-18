@@ -1,0 +1,246 @@
+/*********************
+Main navbar
+**********************/
+
+//Navegacion general
+.nav-barra {
+    a {
+        @include transition(0.4s);
+        border-radius: $radius * 4;
+        padding: 15px 20px;
+        background-color: $color-base;
+
+        &:hover {
+            background-color: $color-alt;
+        }
+    }
+
+    ul {
+        padding-left: 0;
+    }
+
+    .current-menu-item,
+    .current_page_parent,
+    .current_page_item {
+        a {
+            background-color: red;
+        }
+    }
+}
+
+.btn--mainmenu {
+    color: $color-black;
+    @include font-size(10);
+    z-index: 10;
+
+    &:before {
+        @media screen and (min-width: 730px) {
+            display: none;
+        }
+    }
+
+    &.button {
+        .site-nav {
+            @media screen and (max-width: 730px) {
+                display: none;
+            }
+        }
+        @include font-size(20);
+        padding: $padding_base / 2;
+
+        @media screen and (max-width: 730px) {
+            position: fixed;
+            top: 0;
+            right: 0;
+        }
+
+        &.active {
+            @media screen and (max-width: 730px) {
+                background-color: $color-alt2;
+            }
+
+            .site-nav {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
+
+//Navegacion principal
+.site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media screen and (min-width: 400px) {
+        flex: 1 400px;
+        justify-content: flex-end;
+    }
+
+    @media screen and (min-width: 1475px) {
+        flex-direction: column;
+        align-items: center;
+        margin-top: $padding_base;
+    }
+
+    li {
+        margin-bottom: 15px;
+
+        @media screen and (min-width: 1024px) {
+            @include font-size(18);
+        }
+
+        a {
+            padding: 10px;
+        }
+    }
+
+    @media screen and (min-width: 900px) {}
+}
+
+.current_page_item {
+    a {
+        box-shadow: 0 0 0 1px $color-black inset;
+    }
+}
+// .navitem {
+//   background-color: green;
+//   &.actiu {
+//     background-color: yellow;
+//   }
+// }
+
+.site-nav__item {
+    @media screen and (min-width: $bp3) {}
+
+    a {
+        @media screen and (min-width: $bp3) {
+            // margin-bottom: $padding_base/3;
+        }
+        min-width: 90%;
+        display: block;
+        // border-radius: ($padding_base/2.7) 3px;
+        // background-color: darken($color-alt, 5);
+
+        &:hover {
+            background-color: lighten($color-alt, 5);
+            color: $color-black;
+        }
+    }
+}
+
+.site-nav__overlay {
+    .current-menu-item {}
+
+    a {
+        line-height: 1.3;
+        color: $color-white;
+        display: block;
+        @include font-size(56);
+
+        &:hover {
+            background-color: $color-black;
+        }
+    }
+}
+
+// Nav Secondary
+.nav-secondary {
+    ul {
+        display: table;
+        @extend %no-padding;
+        @extend %no-margin;
+
+        @media all and (max-width: $bp3) {
+            display: none;
+        }
+        @media screen and (min-width: $bp3) {}
+        @media screen and (min-width: $bp1) {}
+    }
+
+    li {
+        width: 33.33%;
+        display: table-cell;
+        @extend %text-center;
+        color: $color-alt;
+
+        @media all and (min-width: $bp1) {
+            @include font-size(25);
+        }
+    }
+
+    a {
+        // font-family: $basefont;
+        color: $color-base;
+
+        &:hover {
+            color: $color-alt;
+        }
+    }
+}
+
+.nav-secondary--dos {}
+
+// Nav Footer
+.nav-footer {
+    display: table;
+}
+
+.nav-footer__item {
+    display: table-row;
+    border-bottom: 10px solid $color-white;
+
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+// Nav Header
+.nav-header {
+    @include max-width($bp0);
+    margin: 0 auto;
+    display: none;
+    line-height: $line-height-base * 2.5;
+    @media all and (min-width: 780px) {}
+
+    li ul {
+        display: none;
+    }
+
+    .nav-header__item, li {
+        display: inline-block;
+        @extend %text-center;
+        vertical-align: bottom;
+        @include margin-bottom($padding_base / 10);
+        @include font-size(16);
+
+        a, a:visited {
+            color: $color-white;
+        }
+    }
+}
+
+// Navegacion
+.nav--posts {
+    @include max-width($bp1);
+
+    ul {
+        width: 100%;
+        display: table;
+        @extend %no-padding;
+        @extend %no-margin;
+        // @include padding($gutterwidth);
+
+        li {
+            width: 50%;
+            display: table-cell;
+            vertical-align: middle;
+            @extend %text-center;
+        }
+    }
+
+    img {
+        width: 75px;
+    }
+}

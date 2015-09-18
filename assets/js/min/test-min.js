@@ -1,0 +1,1 @@
+!function(){$(".site-header").on("click",".brand",function(){console.log(this)})}();
