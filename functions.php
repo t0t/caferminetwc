@@ -58,17 +58,6 @@ register_sidebar(array(
     'after_title' => '</h3>',
 ));
 
-// Register menus
-function register_my_menus() {
-  register_nav_menus(
-    array(
-      'header-menu' => __( 'Header Menu' ),
-      'extra-menu' => __( 'Extra Menu' )
-    )
-  );
-}
-add_action( 'init', 'register_my_menus' );
-
 
 /**
  * ----------------------------------------------------------------------------------------
@@ -100,7 +89,7 @@ if ( ! function_exists( 'alpha_setup' ) ) {
 		/**
 		 * Add support for automatic feed links.
 		 */
-		add_theme_support( 'automatic-feed-links' );
+		// add_theme_support( 'automatic-feed-links' );
 
 		/**
 		 * Add support for post thumbnails.
@@ -111,9 +100,10 @@ if ( ! function_exists( 'alpha_setup' ) ) {
 		 * Register nav menus.
 		 */
 		register_nav_menus(
-			array(
-				'main-menu' => __( 'Main Menu', 'alpha' )
-			)
+      array(
+        'header-menu' => __( 'Header Menu' ),
+        'extra-menu' => __( 'Extra Menu' )
+      )
 		);
 	}
 

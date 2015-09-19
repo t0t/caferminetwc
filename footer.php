@@ -17,6 +17,7 @@
 					<?php _e( 'All rights reserved.', 'alpha' ); ?>
 				</p>
 			</div> <!-- end copyright -->
+			<?php edit_post_link( __( 'Edit', 'alpha' ), '{{ ', ' }}' ); ?>
 
 	</footer> <!-- end site-footer -->
 

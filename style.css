@@ -6,9 +6,11 @@ Description:        WooCommerce Theme
 Version:            0.2
 Author:             Sergio Forés
 Author URI:         http://sergiofores.net
+Text Domain:        alpha
 
 License:            MIT License
 License URI:        http://opensource.org/licenses/MIT
+
 */
 body {
   margin: 0; }
