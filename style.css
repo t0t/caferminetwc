@@ -1253,6 +1253,32 @@ body {
   font-size: 0.875rem;
   margin: 0; }
 
+.product-category {
+  background-color: black; }
+
+.product {
+  flex-wrap: wrap;
+  justify-content: center; }
+  .product a {
+    background-color: white; }
+
+.products {
+  display: flex;
+  flex-wrap: wrap; }
+
+.woocommerce ul.products li.product .onsale {
+  margin: -5px 5px; }
+
+.onsale {
+  position: absolute; }
+
+.woocommerce-main-image {
+  background-color: yellow;
+  padding: 3px; }
+
+.summary {
+  flex-basis: 50%; }
+
 /*********************
 Main navbar
 **********************/

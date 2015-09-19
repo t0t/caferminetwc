@@ -1,0 +1,41 @@
+// products
+.product-category {
+  background-color: black;
+}
+
+.product {
+  // background-color: blue;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  a {
+    background-color: white;
+  }
+}
+.products {
+  // background-color: red;
+  display: flex;
+  flex-wrap: wrap;
+  // width: 100%;
+}
+
+.woocommerce ul.products li.product .onsale {
+  margin: -5px 5px;
+}
+  .onsale {
+    position: absolute;
+  }
+  
+.images {
+  // background-color: yellow;
+  // padding: 3px;
+}
+.woocommerce-main-image {
+  background-color: yellow;
+  padding: 3px;
+}
+
+
+.summary {
+  flex-basis: 50%;
+}
