@@ -779,6 +779,7 @@ input[type="submit"].btn:hover {
 .site-header {
   width: 100%;
   display: flex;
+  flex: 1 200px;
   justify-content: space-between;
   background-color: #ffba68;
   padding: 8.33333px; }
