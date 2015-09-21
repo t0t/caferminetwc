@@ -114,7 +114,7 @@ gulp.task('dev', ['watch'], function(){
   browserSync.init(['./style.css','./assets/js/build.js'], {
     // server: { baseDir: 'http://t0t-2.local:5757/' }
     // server: { baseDir: 'http://localhost:3000/' }
-    proxy: 'dev.tiendawc.com',
+    proxy: 'dev.caferminet.es',
     host: 'localhost'
     // server: { baseDir: 'dev.tiendawc.com/' }
   });

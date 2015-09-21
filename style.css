@@ -887,7 +887,7 @@ body {
   flex-wrap: wrap;
   align-content: center;
   background-color: #f6f5f4;
-  padding-bottom: 50px; }
+  padding: 50px; }
 
 .site-main__content {
   padding-left: 25px;
@@ -1258,8 +1258,7 @@ body {
   background-color: black; }
 
 .product {
-  flex-wrap: wrap;
-  justify-content: center; }
+  flex-wrap: wrap; }
   .product a {
     background-color: white; }
 
@@ -1273,12 +1272,39 @@ body {
 .onsale {
   position: absolute; }
 
+.images {
+  padding-right: 50px; }
+
 .woocommerce-main-image {
   background-color: yellow;
   padding: 3px; }
 
 .summary {
-  flex-basis: 50%; }
+  flex: 1 300px; }
+
+.single_add_to_cart_button {
+  margin-top: 12.5px;
+  margin-bottom: 12.5px;
+  padding: 12.5px 25px;
+  border: none;
+  background-color: #ffba68; }
+
+.woocommerce-breadcrumb {
+  flex: 1 100%;
+  padding-top: 12.5px;
+  padding-left: 12.5px;
+  background-color: #f6f5f4; }
+
+*[data-attribute_name] {
+  margin-left: 25px;
+  margin-right: 25px; }
+
+.woocommerce-ordering,
+.woocommerce-result-count {
+  display: none; }
+
+.wc-tabs-wrapper {
+  flex: 1 90%; }
 
 /*********************
 Main navbar
