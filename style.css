@@ -776,6 +776,9 @@ input[type="submit"].btn:hover {
   animation-iteration-count: infinite;
   animation-timing-function: ease; }
 
+.icon {
+  width: 30px; }
+
 .site-header {
   width: 100%;
   display: flex;
@@ -798,6 +801,9 @@ input[type="submit"].btn:hover {
   color: #a89a8f;
   background-color: #d9d3ce;
   order: 3; }
+  @media screen and (min-width: 450px) {
+    .main-footer {
+      display: flex; } }
 
 .main-footer__credits {
   font-size: 13px;
@@ -1254,11 +1260,30 @@ body {
   font-size: 0.875rem;
   margin: 0; }
 
+.woocommerce {
+  display: flex;
+  flex-wrap: wrap; }
+  .woocommerce .woocommerce-message {
+    flex-basis: 100%; }
+  .woocommerce table.shop_table {
+    width: 100%; }
+    .woocommerce table.shop_table td {
+      max-width: 100%; }
+  .woocommerce .cart-collaterals {
+    width: 100%;
+    flex: 1 500px; }
+    .woocommerce .cart-collaterals .cart_totals {
+      width: 90%; }
+
+.cart-actionform {
+  flex: 0 50%; }
+
 .product-category {
   background-color: black; }
 
 .product {
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  flex: 1 350px; }
   .product a {
     background-color: white; }
 

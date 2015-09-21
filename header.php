@@ -34,8 +34,6 @@
 					wp_nav_menu( array( 'theme_location' => 'header-menu',
             'menu_class' => 'site-nav' ));
         ?>
-				<li><a href="https://www.facebook.com/CaFerminet" target="_blank"><i class="icon-facebook"></i></a></li>
-        <li><a href="mailto:sergiofores@gmail.com"><i class="icon-envelope"></i></a></li>
-			</nav>
+      </nav>
 
   </header>
