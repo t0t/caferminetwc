@@ -31,7 +31,7 @@
 
       <nav class="btn--mainmenu" role="navigation">
 				<?php
-					wp_nav_menu( array( 'theme_location' => 'main-menu',
+					wp_nav_menu( array( 'theme_location' => 'header-menu',
             'menu_class' => 'site-nav' ));
         ?>
 				<li><a href="https://www.facebook.com/CaFerminet" target="_blank"><i class="icon-facebook"></i></a></li>
