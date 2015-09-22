@@ -9,6 +9,14 @@
   .product-summary {
     flex: 1 500px;
   }
+  .product-thumbnails {
+    margin-top: 10px;
+    img {
+      max-width: 50px;
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+  }
 // $product
 // [class*=product] {
 //     &:hover {}
