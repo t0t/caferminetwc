@@ -135,7 +135,7 @@ ul,
 dl,
 address {
     line-height: $line-height-base;
-    
+
     small {
         font-style: normal;
         line-height: $line-height-base / 4;
@@ -171,7 +171,7 @@ ul {
 blockquote {
     padding-left: $padding_base / 4;
     border-left: 5px solid $color-alt;
-    
+
     // @include font-size(15);
     color: $color-black;
     margin-left: 0;
@@ -308,13 +308,4 @@ hr {
     padding: 0;
     height: 1px;
     border: 0;
-}
-
-figure {
-    @media screen and (min-width: $bp3) {}
-
-    img {
-        &:hover {}
-    }
-    figcaption {}
 }

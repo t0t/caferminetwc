@@ -1,9 +1,14 @@
 .alert {
-  margin-bottom: $padding_base;
+  margin-bottom: $padding_base/4;
   padding: 20px;
+  width: 100%;
+  flex: 1 100%;
+  a {
+    color: $color-alt2;
+  }
 }
   .alert-info {
-    background-color: blue;
+    background-color: $color-white;
   }
   .alert-error {
     background-color: pink;

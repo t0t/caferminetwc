@@ -1,4 +1,24 @@
+.woocommerce {
+  display: flex;
+  flex-wrap: wrap;
+}
+.checkout {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cart-actionform {
+  flex: 0 600px;
+}
+.cart-collaterals {
+  flex: 1 300px;
+}
 
+
+.reset_variations {
+  color: $color-alt2;
+  text-transform: uppercase;
+}
 
 .woocommerce-breadcrumb {
   flex-basis: 100%;
@@ -14,7 +34,7 @@
 
 .woocommerce-ordering,
 .woocommerce-result-count {
-  display: none;
+  // display: none;
 }
 
 .onsale {
@@ -32,4 +52,9 @@
   display: block;
   color: $color-alt2;
   max-width: 140px;
+}
+
+.remove-item {
+  @include font-size(40);
+  display: block;
 }

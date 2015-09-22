@@ -138,6 +138,9 @@ if ( ! function_exists( 'alpha_scripts' ) ) {
  * Woo Theme support Declaration
  ***************/
 add_theme_support( 'woocommerce' );
+
+// Remove catalog ordering
+remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
 // Remove default WC CSS
 add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
 //unhookd woocommerce wrappers

@@ -294,6 +294,9 @@ td,
 th {
   padding: 0; }
 
+input {
+  border: none; }
+
 hr {
   display: display-block; }
 
@@ -584,9 +587,11 @@ hr {
   top: 10px;
   right: 10px;
   text-align: center; }
+  .product .btn-singlecart {
+    position: inherit; }
 
 .btn-checkout {
-  background-color: blue; }
+  background-color: #ffba68; }
 
 .btn--inline-text {
   display: inline;
@@ -704,69 +709,18 @@ input[type="submit"].btn:hover {
   .btn--image a:hover {
     background-color: transparent; }
 
-.highlight {
-  background-color: red;
-  color: white; }
-
-.form-search {
-  margin-left: 50px; }
-
-.form--disponibilidad {
-  background-color: #ffba68; }
-  .form--disponibilidad h3 {
-    margin: 0; }
-
-.validation_error,
-.validation_message {
-  font-size: 12px;
-  font-size: 0.75rem;
-  color: red; }
-
-.form-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  flex: 1 450px;
-  padding-top: 25px;
-  padding-left: 25px;
-  padding-right: 25px; }
-  .form-wrap .form__checkinout,
-  .form-wrap .form__user-input {
-    flex: 1 175px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; }
-    .form-wrap .form__checkinout input,
-    .form-wrap .form__user-input input {
-      margin-bottom: 15px;
-      margin-right: 15px;
-      margin-left: 15px;
-      flex: 1 200px; }
-  .form-wrap .form__submit-wrap {
-    display: flex;
-    justify-content: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    flex: 1 100%; }
-
-.days_not_available {
-  color: #ccc; }
-
-.calendar {
-  flex-basis: 200px;
-  margin-bottom: 16.66667px; }
-  .calendar span {
-    padding-right: 4px; }
-  .calendar button {
-    border: none;
-    background-color: transparent; }
-  .calendar .disabled > span {
-    color: pink; }
-
 .input-client {
   flex: 1 50%; }
+
+label {
+  margin-right: 10px; }
+
+input {
+  padding: 5px; }
+
+input[type=number] {
+  width: 50px;
+  text-align: center; }
 
 @keyframes fade {
   0% {
@@ -791,17 +745,59 @@ input[type="submit"].btn:hover {
   width: 30px; }
 
 .alert {
-  margin-bottom: 50px;
-  padding: 20px; }
+  margin-bottom: 12.5px;
+  padding: 20px;
+  width: 100%;
+  flex: 1 100%; }
+  .alert a {
+    color: #abd1b2; }
 
 .alert-info {
-  background-color: blue; }
+  background-color: white; }
 
 .alert-error {
   background-color: pink; }
 
 .alert-success {
   background-color: #abd1b2; }
+
+/*------------------------------------*    $TABLAS
+\*------------------------------------*/
+table {
+  max-width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0; }
+  table th,
+  table td {
+    padding: 10px;
+    vertical-align: middle;
+    line-height: 0;
+    text-align: left; }
+  table th {
+    font-weight: bold; }
+  table thead th {
+    vertical-align: bottom; }
+  table colgroup + thead tr:first-child th,
+  table colgroup + thead tr:first-child td,
+  table thead:first-child tr:first-child th,
+  table thead:first-child tr:first-child td {
+    border-top: 0; }
+  table tbody tr td,
+  table tbody tr th {
+    transition: all background-color 0.25s 0 linear; }
+
+.table-condensed th,
+.table-condensed td {
+  padding: 4px 5px; }
+
+.table-bordered {
+  border-left: 0;
+  border-collapse: separate;
+  *border-collapse: collapsed; }
+  .table-bordered thead:first-child tr:first-child th,
+  .table-bordered tbody:first-child tr:first-child th,
+  .table-bordered tbody:first-child tr:first-child td {
+    border-top: 0; }
 
 .site-header {
   width: 100%;
@@ -952,6 +948,11 @@ body {
   flex: 1 350px;
   position: relative;
   max-width: 420px; }
+  .product-related .posts-wrap-item {
+    margin: 10px;
+    max-width: 220px; }
+    .product-related .posts-wrap-item .btn-singlecart {
+      top: 100px; }
 
 .posts-wrap-itemtitle {
   margin: 0;
@@ -1154,7 +1155,7 @@ body {
 .product-related {
   width: 100%;
   background-color: #abd1b2;
-  padding: 50px; }
+  padding: 25px; }
 
 .product--features {
   margin-left: 50px;
@@ -1308,6 +1309,25 @@ body {
   font-size: 0.875rem;
   margin: 0; }
 
+.woocommerce {
+  display: flex;
+  flex-wrap: wrap; }
+
+.checkout {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; }
+
+.cart-actionform {
+  flex: 0 600px; }
+
+.cart-collaterals {
+  flex: 1 300px; }
+
+.reset_variations {
+  color: #abd1b2;
+  text-transform: uppercase; }
+
 .woocommerce-breadcrumb {
   flex-basis: 100%;
   padding-top: 25px;
@@ -1317,10 +1337,6 @@ body {
 *[data-attribute_name] {
   margin-left: 25px;
   margin-right: 25px; }
-
-.woocommerce-ordering,
-.woocommerce-result-count {
-  display: none; }
 
 .onsale {
   position: absolute;
@@ -1336,6 +1352,11 @@ body {
   display: block;
   color: #abd1b2;
   max-width: 140px; }
+
+.remove-item {
+  font-size: 40px;
+  font-size: 2.5rem;
+  display: block; }
 
 /*********************
 Main navbar

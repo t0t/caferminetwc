@@ -4,20 +4,15 @@
 \*------------------------------------*/
 
 table {
-	@extend %full-width; //width:100%
-	max-width : 100%;
-	margin-bottom : $baselineheight;
-	border-collapse : collapse;
-	border-spacing : 0;
-	background-color : $tablebackground;
+	max-width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
 
 	th,
 	td {
-		padding : 8px;
-		vertical-align : top;
-		border-top : $tableborderwidth $tableborderstyle $tableborder;
-		@include font-size(14);
-		line-height : $baselineheight;
+		padding: 10px;
+		vertical-align : middle;
+		line-height : 0;
 		text-align : left;
 	}
 
@@ -36,9 +31,7 @@ table {
 		border-top : 0;
 	}
 
-	tbody + tbody {
-		border-top : $tableborderwidth * 2 $tableborderstyle $tableborder;
-	}
+	tbody + tbody {}
 
 	tbody tr td,
 	tbody tr th {
@@ -47,7 +40,6 @@ table {
 
 	tbody tr:hover td,
 	tbody tr:hover th {
-		background-color : $tablehover;
 	}
 }
 
@@ -63,14 +55,12 @@ td {
 // BORDERED ====================================================
 
 .table-bordered {
-	border : $tableborderwidth $tableborderstyle $tableborder;
 	border-left : 0;
 	border-collapse : separate;
 	*border-collapse : collapsed;
 
 	th,
 	td {
-		border-left : $tableborderwidth $tableborderstyle $tableborder;
 	}
 
 	thead:first-child tr:first-child th,
@@ -83,9 +73,7 @@ td {
 // STRIPED ====================================================
 
 .table-striped {
-
 	tbody tr:nth-child(odd) td,
 	tbody tr:nth-child(odd) th {
-		background-color : $tablestripe;
 	}
 }

@@ -9,6 +9,15 @@
     flex: 1 350px;
     position: relative;
     max-width: 420px;
+
+    .product-related & {
+      margin: 10px;
+      max-width: 220px;
+
+      .btn-singlecart {
+        top: 100px;
+      }
+    }
   }
   .posts-wrap-itemtitle {
     margin: 0;
@@ -40,17 +49,10 @@
 .entry {
   flex: 1 400px;
   width: 100%;
-  // display: flex;
-  // flex-wrap: wrap;
-  // flex: 0 75%;
-  // justify-content: flex-end;
-  // padding-bottom: $padding_base;
 }
 
 .entry__header {
-    // flex-basis: 100%;
-    // margin-top: $padding_base/2;
-    text-align: center;
+  text-align: center;
 }
 .entry__title {
     // background-color: red;
