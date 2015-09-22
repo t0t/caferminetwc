@@ -297,13 +297,10 @@ th {
 input {
   border: none; }
 
-.widget--newsletter form, .well {
-  display: flex; }
-
 hr {
   display: display-block; }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .main-footer__credits, .main-footer__searchform label, .main-footer__searchform label input, .post--sidebar, .widget--newsletter, .alert--info, .well, .well--large, .content-summary__item, .tienda__item, .nav-secondary li, .nav-header .nav-header__item, .nav-header li, .nav--posts ul li {
+.main-footer__credits, .main-footer__searchform label, .main-footer__searchform label input, .post--sidebar, .widget--newsletter, .alert--info, .well, .well--large, .content-summary__item, .tienda__item, .nav-secondary li, .nav--posts ul li {
   text-align: center; }
 
 h1.altheader,
@@ -806,8 +803,8 @@ table {
     border-top: 0; }
 
 .site-header {
-  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   flex: 1 200px;
   justify-content: space-between;
   background-color: #ffba68;
@@ -1606,26 +1603,18 @@ Main navbar
       flex-wrap: wrap; }
 
 .site-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; }
-  @media screen and (min-width: 400px) {
-    .site-nav {
-      flex: 1 400px;
-      justify-content: flex-end; } }
-  @media screen and (min-width: 1348px) {
-    .site-nav {
-      flex-direction: column;
-      align-items: center;
-      margin-top: 50px; } }
-  .site-nav li {
-    margin-bottom: 15px; }
-    @media screen and (min-width: 1024px) {
-      .site-nav li {
-        font-size: 18px;
-        font-size: 1.125rem; } }
-    .site-nav li a {
-      padding: 10px; }
+  flex-basis: 700px;
+  align-self: center; }
+  .site-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+  @media screen and (min-width: 1024px) {
+    .site-nav li {
+      margin: 12.5px 0; } }
+  .site-nav li a {
+    display: block;
+    padding: 10px 15px; }
 
 .current_page_item a {
   box-shadow: 0 0 0 1px black inset; }
@@ -1674,26 +1663,6 @@ Main navbar
   border-bottom: 10px solid white; }
   .nav-footer__item:last-child {
     border-bottom: none; }
-
-.nav-header {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1460px;
-  width: 100%;
-  margin: 0 auto;
-  display: none;
-  line-height: 3.75; }
-  .nav-header li ul {
-    display: none; }
-  .nav-header .nav-header__item, .nav-header li {
-    display: inline-block;
-    vertical-align: bottom;
-    margin-right: 5px;
-    margin-left: 5px;
-    font-size: 16px;
-    font-size: 1rem; }
-    .nav-header .nav-header__item a, .nav-header .nav-header__item a:visited, .nav-header li a, .nav-header li a:visited {
-      color: white; }
 
 .nav--posts {
   margin-left: auto;

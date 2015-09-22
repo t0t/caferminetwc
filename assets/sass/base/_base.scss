@@ -120,7 +120,7 @@ h3 small {
         margin-bottom: #{$margin-bot}px;
         @include font-size($font-size);
         line-height: $line-height;
-        @extend %text-center;
+        // @extend %text-center;
 
         span {
             color: $color-alt2;

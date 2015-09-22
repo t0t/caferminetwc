@@ -29,10 +29,12 @@
   			<h2 class="brand__description"><?php bloginfo('description');?></h2>
       </div>
 
-      <nav class="btn--mainmenu" role="navigation">
+      <nav class="site-nav" role="navigation">
 				<?php
-					wp_nav_menu( array( 'theme_location' => 'header-menu',
-            'menu_class' => 'site-nav' ));
+					wp_nav_menu( array(
+            'theme_location'  => 'header-menu',
+            'container'       => ''
+          ));
         ?>
       </nav>
 

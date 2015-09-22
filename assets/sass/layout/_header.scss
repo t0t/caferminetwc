@@ -1,8 +1,8 @@
 header {}
 
 .site-header {
-    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     flex: 1 200px;
     justify-content: space-between;
     background-color: $color-alt;
