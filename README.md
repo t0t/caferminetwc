@@ -3,7 +3,7 @@
 
 ### Clean Wordpress theme for on-line shop.
 
-![Screenshot](https://s3-us-west-2.amazonaws.com/s.cdpn.io/98095/logoyo.png)
+![Screenshot](./screenshot.png)
 
 ## Related Info
 * [BEM. Block, Element, Modifier](https://bem.info/method/)
