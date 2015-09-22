@@ -47,6 +47,15 @@ define( 'SCRIPTS', THEMEROOT . '/assets/js' );
  //   return get_post_meta( $object[ 'id' ], $field_name, true );
  // }
 
+// Cleaning up wp_head
+remove_action('wp_head', 'rsd_link');
+remove_action('wp_head', 'wlwmanifest_link');
+remove_action('wp_head', 'index_rel_link');
+remove_action('wp_head', 'wp_generator');
+remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+remove_action( 'wp_print_styles', 'print_emoji_styles' );
+remove_action( 'admin_print_styles', 'print_emoji_styles' );
 
 // Register Sidebar
 register_sidebar(array(
@@ -129,6 +138,8 @@ if ( ! function_exists( 'alpha_scripts' ) ) {
  * Woo Theme support Declaration
  ***************/
 add_theme_support( 'woocommerce' );
+// Remove default WC CSS
+add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
 //unhookd woocommerce wrappers
 remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
 remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);

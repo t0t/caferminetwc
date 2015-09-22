@@ -1,0 +1,13 @@
+.alert {
+  margin-bottom: $padding_base;
+  padding: 20px;
+}
+  .alert-info {
+    background-color: blue;
+  }
+  .alert-error {
+    background-color: pink;
+  }
+  .alert-success {
+    background-color: $color-alt2;
+  }

@@ -1,29 +1,48 @@
 // The Posts
-.posts-header {
-    flex: 1;
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
-    margin-bottom: $padding_base;
-}
 .posts-wrap {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: $padding_base/2;
-    margin-right: $padding_base/2;
-    @media screen and (min-width: 730px) {
-        margin-left: $padding_base;
-        margin-right: $padding_base;
+  display: flex;
+  flex-wrap: wrap;
+  @media screen and (min-width: 730px) {}
+}
+  .posts-wrap-item {
+    flex: 1 350px;
+    position: relative;
+  }
+  .posts-wrap-itemtitle {
+    margin: 0;
+    width: 150px;
+    @include font-size(20);
+  }
+  .posts-wrap-figure {
+    position: relative;
+    img{
+      background-color: $color-white;
+      width: 100%;
     }
+  }
+  .posts-wrap-figcaption {
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: $color-white;
+  }
+
+.posts-header {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  margin-bottom: $padding_base;
 }
 .entry {
-    flex: 1 400px;
-    width: 100%;
-    // display: flex;
-    // flex-wrap: wrap;
-    // flex: 0 75%;
-    // justify-content: flex-end;
-    // padding-bottom: $padding_base;
+  flex: 1 400px;
+  width: 100%;
+  // display: flex;
+  // flex-wrap: wrap;
+  // flex: 0 75%;
+  // justify-content: flex-end;
+  // padding-bottom: $padding_base;
 }
 
 .entry__header {

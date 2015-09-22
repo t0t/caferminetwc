@@ -31,12 +31,14 @@ body {
       }
   }
   .site-main__title {
-      padding-top: $padding_base/2;
+      // padding-top: $padding_base/2;
       margin-bottom: 0;
       @include font-size(20);
       @media screen and (min-width: 730px) {
           @include font-size(50);
-          padding-top: $padding_base;
+          // padding-top: $padding_base;
       }
   }
-  .site-main__description {}
+  .site-main__description {
+    background-color: red;
+  }

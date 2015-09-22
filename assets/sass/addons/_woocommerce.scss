@@ -1,101 +1,35 @@
 
-// Cart
-.woocommerce {
-  display: flex;
-  flex-wrap: wrap;
-
-  .woocommerce-message {
-    flex-basis: 100%;
-  }
-  table.shop_table {
-    width: 100%;
-    td {
-      max-width: 100%;
-    }
-  }
-  .cart-collaterals {
-    width: 100%;
-    flex: 1 500px;
-
-    .cart_totals {
-      width: 90%;
-    }
-
-  }
-}
-.cart-actionform {
-  flex: 0 50%;
-}
-
-// products
-.product-category {
-  background-color: black;
-}
-
-.product {
-  // background-color: blue;
-  flex-wrap: wrap;
-  // justify-content: center;
-  flex: 1 350px;
-
-  a {
-    background-color: white;
-  }
-}
-.products {
-  // background-color: red;
-  display: flex;
-  flex-wrap: wrap;
-  // width: 100%;
-}
-
-.woocommerce ul.products li.product .onsale {
-  margin: -5px 5px;
-}
-  .onsale {
-    position: absolute;
-  }
-
-.images {
-  // background-color: yellow;
-  padding-right: $padding_base;
-}
-.woocommerce-main-image {
-  background-color: yellow;
-  padding: 3px;
-}
-
-
-.summary {
-  flex: 1 300px;
-}
-
-// btn
-.single_add_to_cart_button {
-  margin-top: $padding_base / 4;
-  margin-bottom: $padding_base / 4;
-  padding: $padding_base/4 $padding_base/2;
-  border: none;
-  background-color: $color-alt;
-}
 
 .woocommerce-breadcrumb {
-  flex: 1 100%;
-  padding-top: $padding_base / 4;
-  padding-left: $padding_base / 4;
+  flex-basis: 100%;
+  padding-top: $padding_base/2;
+  padding-left: $padding_base;
   background-color: $site-main-bgcolor;
 }
 
-
 *[data-attribute_name] {
-  margin-left: $padding_base/2 ;
-  margin-right: $padding_base/2 ;
+  margin-left: $padding_base/2;
+  margin-right: $padding_base/2;
 }
 
 .woocommerce-ordering,
 .woocommerce-result-count {
   display: none;
 }
-.wc-tabs-wrapper {
-  flex: 1 90%;
+
+.onsale {
+  position: absolute;
+  background-color: $color-white;
+  margin-top: $padding_base/4;
+  margin-left: $padding_base/4;
+  padding: $padding_base/4;
+  border-radius: $padding_base/2;
+}
+
+.price {
+  text-align: center;
+  width: 100%;
+  display: block;
+  color: $color-alt2;
+  max-width: 140px;
 }

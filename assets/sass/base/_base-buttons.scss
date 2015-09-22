@@ -1,15 +1,16 @@
 
 .btn {
     // background-color: $color-alt;
-    padding: 5px 8px;
+    padding: 10px 15px;
     // @include font-size(13);
     @media screen and (min-width: $bp3) {
         @include font-size(18);
     }
-    
+    background-color: $color-alt2;
+
     &:hover {
-        background-color: darken($color-alt, 10);
-        color: $color-base;
+        background-color: $color-alt2;
+        color: $color-black;
         border: none;
     }
     &:active,
@@ -32,6 +33,21 @@
         }
     }
 }
+
+// WooCommerce Buttons
+.btn-singlecart {
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-align: center;
+}
+.btn-checkout {
+  // color: $color-white;
+  background-color: blue;
+}
+
+
 
 .btn--inline-text {
     display: inline;
@@ -223,5 +239,3 @@ input[type="submit"].btn:hover {
 }
 
 .btn--invert {}
-
-
