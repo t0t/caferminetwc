@@ -17,6 +17,11 @@
       margin-right: 8px;
     }
   }
+  .product-related {
+    width: 100%;
+    background-color: $color-alt2;
+    padding: $padding_base;
+  }
 // $product
 // [class*=product] {
 //     &:hover {}

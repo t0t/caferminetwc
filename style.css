@@ -945,11 +945,13 @@ body {
 
 .posts-wrap {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: center; }
 
 .posts-wrap-item {
   flex: 1 350px;
-  position: relative; }
+  position: relative;
+  max-width: 420px; }
 
 .posts-wrap-itemtitle {
   margin: 0;
@@ -1148,6 +1150,11 @@ body {
     max-width: 50px;
     border-radius: 50%;
     margin-right: 8px; }
+
+.product-related {
+  width: 100%;
+  background-color: #abd1b2;
+  padding: 50px; }
 
 .product--features {
   margin-left: 50px;
