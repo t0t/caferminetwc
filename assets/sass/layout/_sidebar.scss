@@ -1,40 +1,15 @@
 .sidebar {
-    border-radius: $radius * 5;
-    padding: $gutterwidth;
-    background-color: $black-alpha-fuerte;
-    // @include font-size(24);
-
-    @media all and (min-width: 900px) {
-        // padding: $gutterwidth;
-        position: relative;
-        width: 25%;
-    }
-
-    * {
-        letter-spacing: $baseletterspacing;
-        @include transition(0.3s);
-    }
-
-    a, a:visited {
-        color: $white-alpha-medio;
-
-        &:hover {
-            color: $white;
-        }
-    }
-
-    h3, h2, h4 {
-        color: $black;
-    }
-
-    img {
-        width: inherit;
-    }
-
-    figure {
-        > a {
-            @extend %clearfix;
-        }
-        figcaption {}
-    }
+  display: flex;
+  flex-wrap: wrap;
 }
+
+  .sidebar-vertical {
+    width: 20%;
+    background-color: $color-alt;
+  }
+  .sidebar-horizontal {
+    width: 100%;
+    background-color: $color-alt2;
+    justify-content: space-around;
+
+  }

@@ -44,7 +44,7 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
 ?>
 
 
-<li <?php //post_class( $classes ); ?> class="posts-wrap-item">
+<li class="posts-wrap-item">
 
 	<?php do_action( 'woocommerce_before_shop_loop_item' ); ?>
 

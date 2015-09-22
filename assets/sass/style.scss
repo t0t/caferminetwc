@@ -37,9 +37,10 @@ License URI:        http://opensource.org/licenses/MIT
 @import "layout/aside";
 
 @import "layout/body";
-// @import "layout/sidebar";
+@import "layout/sidebar";
 @import "layout/posts";
 @import "blocks/brand";
+@import "blocks/widgets";
 // @import "blocks/social";
 @import "blocks/product";
 @import "blocks/galerias";

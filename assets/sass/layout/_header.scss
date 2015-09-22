@@ -8,7 +8,7 @@ header {}
     background-color: $color-alt;
     padding: $padding_base / 6;
 
-    @media screen and (min-width: 1475px) {
+    @media screen and (min-width: 1344px) {
         flex-wrap: wrap;
         justify-content: space-around;
         align-content: flex-start;

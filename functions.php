@@ -63,8 +63,16 @@ register_sidebar(array(
     'id' => 'sidebar-1',
     'before_widget' => '<div class="widget">',
     'after_widget' => '</div>',
-    'before_title' => '<h3 class="widgettitle">',
-    'after_title' => '</h3>',
+    'before_title' => '<h4 class="widget-title">',
+    'after_title' => '</h4>',
+));
+register_sidebar(array(
+    'name' => 'Footer Sidebar',
+    'id' => 'sidebar-2',
+    'before_widget' => '<div class="widget">',
+    'after_widget' => '</div>',
+    'before_title' => '<h4 class="widget-title">',
+    'after_title' => '</h4>',
 ));
 
 

@@ -4,12 +4,8 @@
     text-align: center;
     line-height: 3;
     color: darken($color-base, 25);
-    background-color: darken($color-base, 3);
-    // margin-top: $padding_base * 2;
     @media screen and (max-width: $bp3) {}
-    @media screen and (min-width: $bp3) {
-      display: flex;
-    }
+    @media screen and (min-width: $bp3) {}
     img[src$=".svg"] {
         @media screen and (max-width: $bp3) {}
     }
