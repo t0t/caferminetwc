@@ -3,35 +3,6 @@ jQuery(document).ready(function($) {
 
 
 
-
-
-  console.log('app.js loaded and builded');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-});
-
-
-jQuery(document).ready(function($) {
-
-
-
   // Navigation
   // Select active item
   var menuItem = $('.site-nav a');
@@ -62,5 +33,3 @@ jQuery(document).ready(function($) {
 
 
 });
-
-//# sourceMappingURL=build.js.map

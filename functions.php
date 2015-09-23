@@ -132,14 +132,12 @@ if ( ! function_exists( 'alpha_setup' ) ) {
  * 10.0 - Load the custom scripts for the theme.
  * ----------------------------------------------------------------------------------------
  */
-if ( ! function_exists( 'alpha_scripts' ) ) {
 	function alpha_scripts() {
-		wp_register_script( 'alpha-custom', SCRIPTS . '/build.js', array( '' ), false, true );
+		wp_enqueue_script( 'alpha-custom', SCRIPTS . '/build.js', array( 'jquery' ), false, false );
 		wp_enqueue_style( 'alpha-master', THEMEROOT . '/style.css', false );
 	}
 
 	add_action( 'wp_enqueue_scripts', 'alpha_scripts' );
-}
 
 
 /***************

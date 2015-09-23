@@ -93,9 +93,8 @@ gulp.task('compressJs', function() {
 //
 // > gulp watch
 gulp.task('watch', function(){
-  gulp.watch(['./*.php','**/*.php']);
   gulp.watch(['assets/sass/**/*.scss','assets/sass/*.scss'],['compileSass']);
-  gulp.watch(['./js/build.js','./js/src/**/*'],['concatJs']);
+  gulp.watch(['assets/js/app/**/*'],['concatJs']);
   // gulp.watch(['jade/*.jade','jade/**/*.jade'],['compileJade']);
   // gulp.watch(['./*.php','**/*.php']);
 });
