@@ -26,13 +26,9 @@ get_header( 'shop' ); ?>
 	?>
 
 <main class="site-main" role="main">
-
 		<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
-
 			<h1 class="site-main__title"><?php woocommerce_page_title(); ?></h1>
-
 		<?php endif; ?>
-
 		<?php
 			/**
 			 * woocommerce_archive_description hook
@@ -44,7 +40,6 @@ get_header( 'shop' ); ?>
 		?>
 
 		<?php if ( have_posts() ) : ?>
-
 			<?php
 				/**
 				 * woocommerce_before_shop_loop hook

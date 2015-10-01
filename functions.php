@@ -118,12 +118,12 @@ if ( ! function_exists( 'alpha_setup' ) ) {
 		 */
 		register_nav_menus(
       array(
-        'header-menu' => __( 'Header Menu' ),
+        'main-menu' => __( 'Main Menu' ),
+        'secondary-menu' => __( 'Secondary Menu' ),
         'extra-menu' => __( 'Extra Menu' )
       )
 		);
 	}
-
 	add_action( 'after_setup_theme', 'alpha_setup' );
 }
 

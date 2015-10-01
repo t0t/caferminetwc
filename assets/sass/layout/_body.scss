@@ -31,7 +31,7 @@ body {
       }
   }
   .site-main__title {
-      // padding-top: $padding_base/2;
+      flex: 1 100%;
       margin-bottom: 0;
       @include font-size(20);
       @media screen and (min-width: 730px) {
