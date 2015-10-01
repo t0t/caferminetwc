@@ -1,12 +1,11 @@
 
 .btn {
-    // background-color: $color-alt;
     padding: 10px 15px;
-    // @include font-size(13);
+    border-radius: 5px;
+    background-color: $color-alt2;
     @media screen and (min-width: $bp3) {
         @include font-size(18);
     }
-    background-color: $color-alt2;
 
     &:hover {
         background-color: $color-alt2;

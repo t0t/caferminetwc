@@ -8,10 +8,12 @@
   flex-wrap: wrap;
 }
 .cart-actionform {
-  flex: 0 600px;
+  flex: 1 500px;
+  padding: $padding_base;
 }
 .cart-collaterals {
-  flex: 1 300px;
+  flex: 1 500px;
+  padding: $padding_base;
 }
 
 .woocommerce-result-count {

@@ -10,13 +10,12 @@
     flex: 1 350px;
     position: relative;
     max-width: 420px;
-
     .product-related & {
       margin: 10px;
       max-width: 220px;
-
       .btn-singlecart {
-        top: 100px;
+        top: -100px;
+        left: 4px;
       }
     }
   }

@@ -1,10 +1,20 @@
 .alert {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  flex: 1 100%;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: $padding_base/4;
   margin-bottom: $padding_base/4;
   padding: 20px;
-  width: 100%;
-  flex: 1 100%;
   a {
     color: $color-alt2;
+    padding-left: $padding_base;
+    padding-right: $padding_base;
+    &:hover {
+      color: darken($color-alt2, 50);;
+    }
   }
 }
   .alert-info {
@@ -15,4 +25,7 @@
   }
   .alert-success {
     background-color: $color-alt2;
+    a {
+      color: darken($color-alt2, 20);
+    }
   }
