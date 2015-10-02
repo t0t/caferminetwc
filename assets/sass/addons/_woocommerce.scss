@@ -1,19 +1,25 @@
 .woocommerce {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .checkout {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
-.cart-actionform {
-  flex: 1 500px;
-  padding: $padding_base;
-}
+.cart-actionform,
 .cart-collaterals {
-  flex: 1 500px;
+  flex-grow: 1;
+  margin-top: $padding_base;
   padding: $padding_base;
+  background-color: #fff;
+  @media screen and (min-width: 1100px) {
+    flex: 0 1 49%;
+  }
+}
+.attachment-shop_thumbnail {
+  min-width: 75px;
 }
 
 .woocommerce-result-count {
