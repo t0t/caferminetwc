@@ -2,12 +2,14 @@
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    justify-content: space-between;
 }
-  .product-images {
-    flex: 0 50%;
-  }
+  .product-images,
   .product-summary {
-    flex: 1 500px;
+    flex-grow: 1;
+    @media screen and (min-width: 800px) {
+      flex: 0 1 49%;
+    }
   }
   .product-thumbnails {
     margin-top: 10px;
