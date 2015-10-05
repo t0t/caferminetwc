@@ -3,7 +3,8 @@
 \*------------------------------------*/
 
 .widget {
-  margin: 0 $padding_base/4;
+  // margin: 0 $padding_base/4;
+  flex-basis: 300px; 
 }
 
 .widget-title {
@@ -13,7 +14,11 @@
 
 .widget--external-links {}
 
-.widget--contact {}
+.widget--social {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
 .widget--wp {}
 

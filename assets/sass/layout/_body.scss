@@ -10,12 +10,15 @@ body {
 }
 
 .site-main {
-    flex: 1 85%;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    background-color: $site-main-bgcolor;
-    padding: $padding_base;
+  flex: 1 85%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  background-color: $site-main-bgcolor;
+  padding: $padding_base;
+  @media screen and (min-width: 1100px) {
+    flex: 1;
+  }
 }
   .site-main__content {
       padding-left: $padding_base/2;

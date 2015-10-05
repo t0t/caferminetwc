@@ -496,7 +496,6 @@ dfn {
   font-style: italic; }
 
 ins {
-  background-color: white;
   color: black;
   text-decoration: none; }
 
@@ -753,9 +752,7 @@ textarea {
 
 .icon {
   width: 30px;
-  height: 30px;
-  display: block;
-  margin-top: 15px; }
+  height: 30px; }
 
 .alert {
   display: flex;
@@ -831,11 +828,10 @@ table {
   padding: 8.33333px; }
   @media screen and (min-width: 1344px) {
     .site-header {
-      flex-wrap: wrap;
       justify-content: space-around;
       align-content: flex-start;
       align-items: inherit;
-      flex: 1 219px; } }
+      flex: 0 219px; } }
 
 .main-footer {
   flex-basis: 100%;
@@ -933,6 +929,9 @@ body {
   align-content: center;
   background-color: #f6f5f4;
   padding: 50px; }
+  @media screen and (min-width: 1100px) {
+    .site-main {
+      flex: 1; } }
 
 .site-main__content {
   padding-left: 25px;
@@ -970,7 +969,8 @@ body {
 .sidebar-horizontal {
   width: 100%;
   background-color: #abd1b2;
-  justify-content: space-around; }
+  justify-content: space-around;
+  padding-bottom: 25px; }
 
 .posts-wrap {
   width: 100%;
@@ -1022,7 +1022,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex: 1 400px;
-  width: 100%; }
+  width: 100%;
+  background-color: white;
+  padding-top: 25px; }
 
 .entry__header {
   flex: 0 50%; }
@@ -1158,13 +1160,8 @@ body {
   animation-timing-function: linear; }
 
 .brand__name {
-  line-height: 1;
-  margin-bottom: 0;
   font-size: 1.1em;
-  font-style: italic;
-  letter-spacing: 1px;
-  color: #ffba68;
-  display: none; }
+  letter-spacing: 1px; }
 
 .brand__description {
   display: none; }
@@ -1182,11 +1179,16 @@ body {
 /*------------------------------------*    $WIDGETS
 \*------------------------------------*/
 .widget {
-  margin: 0 12.5px; }
+  flex-basis: 300px; }
 
 .widget-title {
   text-align: center;
   line-height: inherit; }
+
+.widget--social {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
 
 .product {
   display: flex;
@@ -1201,6 +1203,10 @@ body {
     .product-images,
     .product-summary {
       flex: 0 1 49%; } }
+
+.product-summary {
+  background-color: white;
+  padding: 25px; }
 
 .product-thumbnails {
   margin-top: 10px; }
@@ -1335,6 +1341,14 @@ body {
     .customer_details {
       flex: 0 1 49%; } }
 
+.cart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.product_meta {
+  margin-top: 25px; }
+
 .woocommerce-result-count {
   color: #e0dbd7; }
 
@@ -1344,9 +1358,7 @@ body {
 
 .woocommerce-breadcrumb {
   flex-basis: 100%;
-  padding-top: 25px;
-  padding-left: 50px;
-  background-color: #f6f5f4; }
+  padding-bottom: 25px; }
 
 *[data-attribute_name] {
   margin-left: 25px;

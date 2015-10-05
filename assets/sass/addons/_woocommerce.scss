@@ -51,7 +51,14 @@
     flex: 0 1 49%;
   }
 }
-
+.cart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.product_meta {
+  margin-top: ($padding_base/2);
+}
 .woocommerce-result-count {
   color: $color-base;
 }
@@ -63,9 +70,8 @@
 
 .woocommerce-breadcrumb {
   flex-basis: 100%;
-  padding-top: $padding_base/2;
-  padding-left: $padding_base;
-  background-color: $site-main-bgcolor;
+  padding-bottom: $padding_base/2;
+  // background-color: $site-main-bgcolor;
 }
 
 *[data-attribute_name] {

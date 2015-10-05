@@ -11,6 +11,10 @@
       flex: 0 1 49%;
     }
   }
+  .product-summary {
+    background-color: $color-white;
+    padding: ($padding_base/2);
+  }
   .product-thumbnails {
     margin-top: 10px;
     img {

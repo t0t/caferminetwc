@@ -62,13 +62,10 @@
 }
 
 .brand__name {
-    line-height: 1;
-    margin-bottom: 0;
+    // margin-bottom: 0;
     font-size: 1.1em;
-    font-style: italic;
     letter-spacing: 1px;
-    color: $color-alt;
-    display: none;
+    // color: $color-black;
     @media all and (max-width: 700px) {}
 }
 

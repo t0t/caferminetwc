@@ -229,18 +229,17 @@ b, strong {
 }
 
 dfn {
-    font-style: italic;
+  font-style: italic;
 }
 
 ins {
-    background-color: lighten($color-base, 75%);
-    color: $textcolor;
-    text-decoration: none;
+  color: $textcolor;
+  text-decoration: none;
 }
 
 mark {
-    background-color: $color-base;
-    color: $textcolor;
+  background-color: $color-base;
+  color: $textcolor;
 }
 
 pre,
