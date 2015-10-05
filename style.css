@@ -713,15 +713,24 @@ input[type="submit"].btn:hover {
 .input-client {
   flex: 1 50%; }
 
+.input-text {
+  background-color: #f6f5f4; }
+
 label {
   margin-right: 10px; }
 
 input {
-  padding: 5px; }
+  padding: 5px;
+  border-radius: 5px; }
 
 input[type=number] {
   width: 50px;
   text-align: center; }
+
+textarea {
+  width: 100%;
+  border: none;
+  padding: 5px; }
 
 @keyframes fade {
   0% {
