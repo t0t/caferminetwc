@@ -1,10 +1,14 @@
 .brand {
-    width: 75px;
+    flex: 0 1 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    // align-items: center;
     // flex: 0 200px;
 
     @media screen and (min-width: 1177px) {
         // margin-top: $padding_base;
-        width: 150px;
+        // width: 150px;
         // width: 50%;
     }
 }
@@ -14,6 +18,13 @@
     // @include background-image(logo, contain, no-repeat, center, jpg);
     // @include transition(4s);
     // background-color: $color-white;
+    svg {
+      width: 30%;
+      // background-color: blue;
+      @media screen and (min-width: 600px) {
+        width: 100%;
+      }
+    }
 
     path {
         // fill: $color-black;
