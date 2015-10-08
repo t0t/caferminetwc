@@ -3,7 +3,7 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  // justify-content: center;
   @media screen and (min-width: 730px) {}
 }
   .posts-wrap-item {
@@ -54,6 +54,8 @@
   flex-wrap: wrap;
   flex: 1 400px;
   width: 100%;
+  background-color: $color-white;
+  padding-top: ($padding_base/2);
 }
 .entry__header {
   flex: 0 50%;
@@ -69,7 +71,7 @@
 }
 .entry__content {
   flex: 1 300px;
-  margin-bottom: $padding_base;
+  // margin-bottom: $padding_base;
   p {
     margin-left: $padding_base / 2;
     margin-right: $padding_base / 2;

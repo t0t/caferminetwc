@@ -2,66 +2,30 @@
 Main navbar
 **********************/
 
-//Navegacion general
-.nav-barra {
-    a {
-        @include transition(0.4s);
-        border-radius: $radius * 4;
-        padding: 15px 20px;
-        background-color: $color-base;
-
-        &:hover {
-            background-color: $color-alt;
-        }
-    }
-
-    ul {
-        padding-left: 0;
-    }
-
-    .current-menu-item,
-    .current_page_parent,
-    .current_page_item {
-        a {
-            background-color: red;
-        }
-    }
-}
-
-.btn--mainmenu {
-  color: $color-black;
-  @include font-size(10);
-  z-index: 10;
-  &:before {
-    @media screen and (min-width: 730px) {
-      display: none;
-    }
+// hammenu icon menu
+.hammenu {
+  @media screen and (min-width: 600px) {
+    display: none;
   }
-  &.button {
-    .site-nav {
-      @media screen and (max-width: 730px) {
-        display: none;
-      }
-    }
-    @include font-size(20);
-    padding: $padding_base / 2;
-    @media screen and (max-width: 730px) {
-      position: fixed;
-      top: 0;
-      right: 0;
-    }
-    &.active {
-      @media screen and (max-width: 730px) {
-        background-color: $color-alt2;
-      }
-      .site-nav {
-        display: flex;
-        flex-wrap: wrap;
-      }
-    }
+  background-color: darken($color-alt,5);
+  border: none;
+  &.active {
+    background-color: darken($color-alt,10);
   }
 }
-
+input + .site-nav__main {
+  @media screen and (max-width: 599px) {
+    display: none;
+  }
+}
+input.active + .site-nav__main {
+  display: flex;
+  animation-name: slideup;
+  animation-delay: 0s;
+  animation-duration: .5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+}
 //Navegacion principal
 .site-nav {
   flex-basis: 700px;
@@ -76,12 +40,15 @@ Main navbar
 .site-nav__main {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  margin-top: 0;
+  justify-content: center;
   li {
-    // flex-basis: 150px;
+    flex: 0 1 150px;
+    text-align: center;
+    &:hover {
+      background-color: darken($color-alt, 5);
+    }
     @media screen and (min-width: 1024px) {
-        margin: ($padding_base/4) 0;
+      margin: ($padding_base/4) 0;
     }
   }
 }
@@ -102,42 +69,19 @@ Main navbar
 // current menu item selected
 .current_page_item {
   a {
-      box-shadow: 0 0 0 1px $color-black inset;
+    box-shadow: 0 0 0 1px $color-black inset;
   }
 }
 
 .site-nav__item {
-    @media screen and (min-width: $bp3) {}
-
-    a {
-        @media screen and (min-width: $bp3) {
-            // margin-bottom: $padding_base/3;
-        }
-        min-width: 90%;
-        display: block;
-        // border-radius: ($padding_base/2.7) 3px;
-        // background-color: darken($color-alt, 5);
-
-        &:hover {
-            background-color: lighten($color-alt, 5);
-            color: $color-black;
-        }
+  a {
+    min-width: 90%;
+    display: block;
+    &:hover {
+      background-color: lighten($color-alt, 5);
+      color: $color-black;
     }
-}
-
-.site-nav__overlay {
-    .current-menu-item {}
-
-    a {
-        line-height: 1.3;
-        color: $color-white;
-        display: block;
-        @include font-size(56);
-
-        &:hover {
-            background-color: $color-black;
-        }
-    }
+  }
 }
 
 // Nav Secondary
@@ -165,57 +109,44 @@ Main navbar
         }
     }
 
-    a {
-        // font-family: $basefont;
-        color: $color-base;
-
-        &:hover {
-            color: $color-alt;
-        }
+  a {
+    // font-family: $basefont;
+    color: $color-base;
+    &:hover {
+      color: $color-alt;
     }
+  }
 }
-
-.nav-secondary--dos {}
 
 // Nav Footer
 .nav-footer {
-    display: table;
+  display: table;
 }
 
 .nav-footer__item {
-    display: table-row;
-    border-bottom: 10px solid $color-white;
-
-    &:last-child {
-        border-bottom: none;
-    }
-}
-
-// Nav Header
-.nav-header {
-    @media all and (min-width: 780px) {}
+  display: table-row;
+  border-bottom: 10px solid $color-white;
+  &:last-child {
+    border-bottom: none;
+  }
 }
 
 // Navegacion
 .nav--posts {
-    @include max-width($bp1);
-
-    ul {
-        width: 100%;
-        display: table;
-        @extend %no-padding;
-        @extend %no-margin;
-        // @include padding($gutterwidth);
-
-        li {
-            width: 50%;
-            display: table-cell;
-            vertical-align: middle;
-            @extend %text-center;
-        }
+  @include max-width($bp1);
+  ul {
+    width: 100%;
+    display: table;
+    // @include padding($gutterwidth);
+    li {
+      width: 50%;
+      display: table-cell;
+      vertical-align: middle;
+      @extend %text-center;
     }
+  }
 
-    img {
-        width: 75px;
-    }
+  img {
+    width: 75px;
+  }
 }

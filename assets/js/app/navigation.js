@@ -1,7 +1,26 @@
 
 jQuery(document).ready(function($) {
 
+// Declaro elemento
+var elBtn = document.getElementById('Id');
+// La Accion
+var accion = function () {
+  if ( elBtn.value == 'Cerrar Menu' ) {
+    elBtn.value = 'Menu';
+    elBtn.className = 'hammenu';
+  } else {
+    elBtn.value = 'Cerrar Menu';
+    elBtn.className = 'hammenu active';
+  }
+};
+// Asigno acción al elemento
+elBtn.addEventListener('click', accion);
 
+// Ham Menu
+// $('.hammenu').on('click', function () {
+//   $('.nav').toggleClass('active');
+//   return $('.nav-menu').toggleClass('hidden');
+// });
 
   // Navigation
   // Select active item

@@ -1,36 +1,32 @@
 
 .btn {
-    padding: 10px 15px;
-    border-radius: 5px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: $color-alt2;
+  @media screen and (min-width: $bp3) {
+    @include font-size(18);
+  }
+  &:hover {
     background-color: $color-alt2;
-    @media screen and (min-width: $bp3) {
-        @include font-size(18);
-    }
-
+    color: $color-black;
+    border: none;
+  }
+  &:active,
+  &:focus {
+    outline: none;
+  }
+  a {
+    color: $textcolor;
+    @include transition(0.4s);
     &:hover {
-        background-color: $color-alt2;
-        color: $color-black;
-        border: none;
+      text-decoration: none;
+      background-color: $color-alt;
     }
     &:active,
     &:focus {
-        outline: none;
+      outline: none;
     }
-
-    a {
-        color: $textcolor;
-        @include transition(0.4s);
-
-        &:hover {
-            text-decoration: none;
-            background-color: $color-alt;
-        }
-
-        &:active,
-        &:focus {
-            outline: none;
-        }
-    }
+  }
 }
 
 // WooCommerce Buttons
@@ -52,14 +48,13 @@
 
 
 .btn--inline-text {
-    display: inline;
-    padding: 0;
-
-    &:hover {
-        &:before {
-            color: complement($color-base);
-        }
+  display: inline;
+  padding: 0;
+  &:hover {
+    &:before {
+      color: complement($color-base);
     }
+  }
 }
 
 .btn--standard {

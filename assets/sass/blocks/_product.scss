@@ -2,12 +2,18 @@
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    justify-content: space-between;
 }
-  .product-images {
-    flex: 0 50%;
+  .product-images,
+  .product-summary {
+    flex-grow: 1;
+    @media screen and (min-width: 800px) {
+      flex: 0 1 49%;
+    }
   }
   .product-summary {
-    flex: 1 500px;
+    background-color: $color-white;
+    padding: ($padding_base/2);
   }
   .product-thumbnails {
     margin-top: 10px;
@@ -17,41 +23,51 @@
       margin-right: 8px;
     }
   }
+
   .product-related {
     width: 100%;
     background-color: $color-alt2;
-    padding: $padding_base/2;
+    h2 {
+      text-align: center;
+      padding-top: $padding_base/2;
+      margin-bottom: 0;
+    }
+    .posts-wrap {
+      margin-bottom: 0;
+    }
+    .posts-wrap-item {
+      margin: 0;
+    }
   }
 // $product
 // [class*=product] {
 //     &:hover {}
 // }
 .product--features {
-    margin-left: $padding_base;
-    margin-right: $padding_base;
-    margin-bottom: $padding_base;
-    flex: 100%;
-    order: 3;
+  margin-left: $padding_base;
+  margin-right: $padding_base;
+  margin-bottom: $padding_base;
+  flex: 100%;
+  order: 3;
 
-    .main-aside & {
-        padding: 0;
-        position: absolute;
-        bottom: 50px;
-        background: transparent;
-        color: $color-white;
-        display: none;
-    }
-
-    .main-aside &:hover {
-        display: block;
-    }
+  .main-aside & {
+    padding: 0;
+    position: absolute;
+    bottom: 50px;
+    background: transparent;
+    color: $color-white;
+    display: none;
+  }
+  .main-aside &:hover {
+    display: block;
+  }
 
     dt,
     li {
-        // text-transform: uppercase;
-        font-weight: bold;
-        @include font-size(15);
-        margin-right: 10px;
+      // text-transform: uppercase;
+      font-weight: bold;
+      @include font-size(15);
+      margin-right: 10px;
     }
 
     dd {

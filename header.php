@@ -24,14 +24,7 @@
 			<h2 class="brand__description"><?php bloginfo('description');?></h2>
     </div>
     <nav class="site-nav" role="navigation">
-      <?php
-        wp_nav_menu( array(
-          'theme_location'  => 'secondary-menu',
-          'container'       => false,
-          'menu_class'      => 'site-nav__secondary'
-          // 'container_class'       => 'site-nav-secondary'
-        ));
-      ?>
+      <input type="button" id="Id" value="Menu" class="hammenu">
 			<?php
 				wp_nav_menu( array(
           'theme_location'  => 'main-menu',
