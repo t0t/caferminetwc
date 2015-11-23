@@ -29,10 +29,8 @@ if ( empty( $woocommerce_loop['columns'] ) ) {
 if ( ! $product || ! $product->is_visible() ) {
 	return;
 }
-
 // Increase loop count
 $woocommerce_loop['loop']++;
-
 // Extra post classes
 $classes = array();
 if ( 0 == ( $woocommerce_loop['loop'] - 1 ) % $woocommerce_loop['columns'] || 1 == $woocommerce_loop['columns'] ) {
@@ -42,7 +40,6 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
 	$classes[] = 'last';
 }
 ?>
-
 <li class="posts-wrap-item">
 	<?php do_action( 'woocommerce_before_shop_loop_item' ); ?>
 	<a href="<?php the_permalink(); ?>">

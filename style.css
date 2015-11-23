@@ -1443,6 +1443,13 @@ input.active + .site-nav__main {
   animation-iteration-count: 1;
   animation-timing-function: ease-in; }
 
+@media screen and (max-width: 599px) {
+  input + .site-nav__main {
+    display: none; } }
+
+input.active + .site-nav__main {
+  display: flex; }
+
 .site-nav {
   flex-basis: 700px;
   align-self: center; }

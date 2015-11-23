@@ -1,7 +1,6 @@
 /*********************
 Main navbar
 **********************/
-
 // hammenu icon menu
 .hammenu {
   @media screen and (min-width: 600px) {
@@ -26,6 +25,15 @@ input.active + .site-nav__main {
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
 }
+
+input + .site-nav__main {
+  @media screen and (max-width: 599px) {
+    display: none;
+  }
+}
+input.active + .site-nav__main {
+  display: flex;
+}
 //Navegacion principal
 .site-nav {
   flex-basis: 700px;
@@ -35,7 +43,6 @@ input.active + .site-nav__main {
     padding: 10px 15px;
   }
 }
-
 // Navegacion main
 .site-nav__main {
   display: flex;
@@ -145,7 +152,6 @@ input.active + .site-nav__main {
       @extend %text-center;
     }
   }
-
   img {
     width: 75px;
   }
