@@ -14,11 +14,6 @@ var gulp      = require('gulp'),
   // jade        = require('gulp-jade'),
   // babel       = require('gulp-babel');
 
-
-
-
-
-
 // lint
 // gulp.task('lint', function() {
 //   return gulp.src('./lib/*.js')
