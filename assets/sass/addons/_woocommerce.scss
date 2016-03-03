@@ -100,10 +100,12 @@
 .onsale {
   position: absolute;
   background-color: $color-base-alpha;
-  margin-top: $padding_base/4;
-  margin-left: $padding_base/4;
-  padding: $padding_base/4;
-  border-radius: $padding_base/2;
+  margin-top: 0;
+  margin-left: 0;
+  padding: ($padding_base/5) $padding_base/3;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: $padding_base/2;
 }
 
 .price {

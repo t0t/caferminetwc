@@ -20,7 +20,7 @@
   /* Header */
   if ( has_post_thumbnail() && ! post_password_required() ) : ?>
    <header class="entry__header">
-      <figure class="entry__thumbnail"><?php the_post_thumbnail(); ?></figure>
+      <figure class="entry__thumbnail"><?php the_post_thumbnail('medium'); ?></figure>
    </header>
   <?php endif; ?>
 

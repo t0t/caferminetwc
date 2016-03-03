@@ -1009,8 +1009,7 @@ body {
 .posts-wrap-figure {
   position: relative; }
   .posts-wrap-figure img {
-    background-color: white;
-    width: 100%; }
+    background-color: white; }
 
 .posts-wrap-figcaption {
   padding: 10px;
@@ -1424,10 +1423,12 @@ body {
 .onsale {
   position: absolute;
   background-color: rgba(224, 219, 215, 0.5);
-  margin-top: 12.5px;
-  margin-left: 12.5px;
-  padding: 12.5px;
-  border-radius: 25px; }
+  margin-top: 0;
+  margin-left: 0;
+  padding: 10px 16.66667px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 25px; }
 
 .price {
   text-align: center;
