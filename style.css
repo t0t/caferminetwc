@@ -1336,6 +1336,11 @@ body {
     font-size: 14px;
     font-size: 0.875rem; }
 
+.addtoany_share_save_container {
+  padding-left: 25px; }
+  .content .addtoany_share_save_container {
+    padding-left: 0; }
+
 .woocommerce {
   display: flex;
   flex-wrap: wrap;
