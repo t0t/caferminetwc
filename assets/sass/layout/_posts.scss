@@ -71,10 +71,33 @@
 }
 .entry__content {
   flex: 1 300px;
-  // margin-bottom: $padding_base;
+  img {
+    margin-bottom: $padding_base / 2;
+  }
+  img,
+  .wp-caption {
+    float: left;
+    margin-right: $padding_base / 2;
+  }
+  .wp-caption {
+    margin-left: $padding_base / 2;
+  }
   p {
     margin-left: $padding_base / 2;
     margin-right: $padding_base / 2;
+  }
+  .wp-caption-text {
+    color: $color-black-alpha;
+    display: block;
+    float: left;
+    margin-top: -10px;
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 10px;
+    border-left: 5px solid $color-alt2;
+    letter-spacing: 0;
+    font-weight: bold;
+    font-size: 75%;
   }
 }
 .entry__footer {}

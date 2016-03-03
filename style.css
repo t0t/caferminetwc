@@ -326,8 +326,7 @@ body {
   font-size: 0.75rem;
   font-weight: 400;
   color: black;
-  letter-spacing: 1px;
-  background-color: #ebe8e5; }
+  letter-spacing: 1px; }
   @media screen and (min-width: 450px) {
     body {
       font-size: 18px;
@@ -1054,9 +1053,29 @@ body {
 
 .entry__content {
   flex: 1 300px; }
+  .entry__content img {
+    margin-bottom: 25px; }
+  .entry__content img,
+  .entry__content .wp-caption {
+    float: left;
+    margin-right: 25px; }
+  .entry__content .wp-caption {
+    margin-left: 25px; }
   .entry__content p {
     margin-left: 25px;
     margin-right: 25px; }
+  .entry__content .wp-caption-text {
+    color: rgba(0, 0, 0, 0.5);
+    display: block;
+    float: left;
+    margin-top: -10px;
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 10px;
+    border-left: 5px solid #abd1b2;
+    letter-spacing: 0;
+    font-weight: bold;
+    font-size: 75%; }
 
 .entry__image {
   float: left;
