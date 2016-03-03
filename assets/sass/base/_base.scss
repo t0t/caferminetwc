@@ -36,7 +36,7 @@ body {
   // background-image: url(#{$image-path}bg.svg);
 
   @media screen and (min-width: $bp3) {
-    @include font-size(18);
+    @include font-size(15);
   }
 }
 

@@ -1,11 +1,12 @@
 
 .btn {
   padding: 10px 15px;
-  border-radius: 5px;
+  border-radius: 3px;
   background-color: $color-alt2;
-  @media screen and (min-width: $bp3) {
-    @include font-size(18);
-  }
+  letter-spacing: 0;
+  // @media screen and (min-width: $bp3) {
+  //   @include font-size(18);
+  // }
   &:hover {
     background-color: $color-alt2;
     color: $color-black;
@@ -33,7 +34,7 @@
 .btn-singlecart {
   border: none;
   position: absolute;
-  top: 10px;
+  bottom: 0;
   right: 10px;
   text-align: center;
   .product & {

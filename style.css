@@ -329,8 +329,8 @@ body {
   letter-spacing: 1px; }
   @media screen and (min-width: 450px) {
     body {
-      font-size: 18px;
-      font-size: 1.125rem; } }
+      font-size: 15px;
+      font-size: 0.9375rem; } }
 
 a,
 a:visited {
@@ -557,12 +557,9 @@ hr {
 
 .btn {
   padding: 10px 15px;
-  border-radius: 5px;
-  background-color: #abd1b2; }
-  @media screen and (min-width: 450px) {
-    .btn {
-      font-size: 18px;
-      font-size: 1.125rem; } }
+  border-radius: 3px;
+  background-color: #abd1b2;
+  letter-spacing: 0; }
   .btn:hover {
     background-color: #abd1b2;
     color: black;
@@ -583,7 +580,7 @@ hr {
 .btn-singlecart {
   border: none;
   position: absolute;
-  top: 10px;
+  bottom: 0;
   right: 10px;
   text-align: center; }
   .product .btn-singlecart {
@@ -989,7 +986,8 @@ body {
 .posts-wrap {
   width: 100%;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: space-around; }
 
 .posts-wrap-item {
   flex: 1 350px;
@@ -1425,7 +1423,7 @@ body {
 
 .onsale {
   position: absolute;
-  background-color: white;
+  background-color: rgba(224, 219, 215, 0.5);
   margin-top: 12.5px;
   margin-left: 12.5px;
   padding: 12.5px;
