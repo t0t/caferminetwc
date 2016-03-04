@@ -115,7 +115,7 @@ h3 small {
 
 @each $header, $margin-bot, $font-size, $line-height in
 (h1, 25, 30, 1)
-(h2, 3, 30, 1.1)
+(h2, 3, 20, 1.1)
 (h3, 0, 20, 1)
 (h4, 0, 19, 3.4)
 (h5, 7, 19, 2)
@@ -172,14 +172,9 @@ ul {
 blockquote {
   padding-left: $padding_base / 4;
   border-left: 5px solid $color-alt;
-  // @include font-size(15);
   color: $color-black;
   margin-left: 0;
-  // margin-top: $padding_base/2;
   margin-bottom: 0;
-  // max-width: 400px;
-  // font-style: italic;
-  // @include max-width($bp3);
   p {
     // line-height: 1.3;
   }

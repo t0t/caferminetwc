@@ -392,8 +392,8 @@ h1, .h1 {
 
 h2, .h2 {
   margin-bottom: 3px;
-  font-size: 30px;
-  font-size: 1.875rem;
+  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.1; }
   h2 span, .h2 span {
     color: #abd1b2; }
@@ -1012,11 +1012,11 @@ body {
     transition-duration: .5s;
     background-color: #ffba68; }
   .product-related .posts-wrap-item {
-    margin: 10px;
     max-width: 220px; }
     .product-related .posts-wrap-item .btn-singlecart {
-      top: -100px;
-      left: 4px; }
+      display: none;
+      position: static;
+      float: left; }
 
 .posts-wrap-itemtitle {
   margin: 0;
@@ -1260,11 +1260,28 @@ body {
 
 .product-related {
   width: 100%;
-  background-color: #abd1b2; }
+  background-color: #abd1b2;
+  padding-left: 65px;
+  padding-right: 65px;
+  padding-bottom: 41.66667px; }
+  .product-related img {
+    margin-bottom: 0; }
   .product-related h2 {
     text-align: center;
-    padding-top: 25px;
+    padding-top: 33.33333px;
+    padding-bottom: 16.66667px;
     margin-bottom: 0; }
+  .product-related .price {
+    float: right;
+    font-size: 12px;
+    font-size: 0.75rem;
+    letter-spacing: 0; }
+    .product-related .price del {
+      display: none; }
+  .product-related h3 {
+    font-size: 14px;
+    font-size: 0.875rem;
+    float: left; }
   .product-related .posts-wrap {
     margin-bottom: 0; }
   .product-related .posts-wrap-item {

@@ -36,12 +36,15 @@
     }
 
     .product-related & {
-      margin: 10px;
+      // margin: 10px;
       max-width: 220px;
 
       .btn-singlecart {
-        top: -100px;
-        left: 4px;
+        // top: -100px;
+        // left: 4px;
+        display: none;
+        position: static;
+        float: left;
       }
     }
   }
@@ -52,7 +55,10 @@
   }
   .posts-wrap-figure {
     position: relative;
-    img{
+    .product-related & {
+      // background-color: red;
+    }
+    img {
       margin-bottom: 10px;
     }
   }
