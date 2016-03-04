@@ -1,7 +1,7 @@
 
 .btn {
   padding: 10px 15px;
-  border-radius: 3px;
+  // border-radius: 3px;
   background-color: $color-alt2;
   letter-spacing: 0;
   // @media screen and (min-width: $bp3) {
@@ -33,10 +33,14 @@
 // WooCommerce Buttons
 .btn-singlecart {
   border: none;
-  position: absolute;
-  bottom: 0;
-  right: 10px;
   text-align: center;
+  margin-top: 5px;
+  display: block;
+  @media screen and ( min-width: 1460px) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
   .product & {
     position: inherit;
   }

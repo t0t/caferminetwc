@@ -1,18 +1,44 @@
+// pages
+.entry-page {
+  @media screen and ( min-width: 550px ) {
+    padding: $padding_base / 2;
+  }
+  // .wp-caption {}
+  img {
+    float: left;
+    margin-top: $padding_base / 7;
+    margin-right: $padding_base / 2;
+    margin-bottom: $padding_base / 3;
+  }
+}
+
 // The Posts
 .posts-wrap {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  @media screen and (min-width: 730px) {}
+  justify-content: space-between;
 }
   .posts-wrap-item {
-    flex: 1 350px;
     position: relative;
-    max-width: 420px;
+    @media screen and (min-width: 730px) {
+      flex: 0 47%;
+    }
+    margin-bottom: $padding_base;
+    h3 {
+      margin-top: 0;
+    }
+
+    &:hover .btn {
+      transition-property: background-color;
+      transition-duration: .5s;
+      background-color: $color-alt;
+    }
+
     .product-related & {
       margin: 10px;
       max-width: 220px;
+
       .btn-singlecart {
         top: -100px;
         left: 4px;
@@ -27,8 +53,7 @@
   .posts-wrap-figure {
     position: relative;
     img{
-      background-color: $color-white;
-      // width: 100%;
+      margin-bottom: 10px;
     }
   }
   .posts-wrap-figcaption {
@@ -55,7 +80,10 @@
   flex: 1 400px;
   width: 100%;
   background-color: $color-white;
-  padding-top: ($padding_base/2);
+  padding: $padding_base / 2;
+  @media screen and ( min-width: 700px ) {
+    padding: $padding_base;
+  }
 }
 .entry__header {
   flex: 0 50%;
@@ -66,26 +94,11 @@
 .entry__title {
   text-align: left;
   margin-bottom: 0;
-  margin-left: $padding_base / 2;
-  margin-right: $padding_base / 2;
+  // margin-left: $padding_base;
+  // margin-right: $padding_base / 2;
 }
 .entry__content {
-  flex: 1 300px;
-  img {
-    margin-bottom: $padding_base / 2;
-  }
-  img,
-  .wp-caption {
-    float: left;
-    margin-right: $padding_base / 2;
-  }
-  .wp-caption {
-    margin-left: $padding_base / 2;
-  }
-  p {
-    margin-left: $padding_base / 2;
-    margin-right: $padding_base / 2;
-  }
+
   .wp-caption-text {
     color: $color-black-alpha;
     display: block;
@@ -98,6 +111,7 @@
     letter-spacing: 0;
     font-weight: bold;
     font-size: 75%;
+    width: 100%;
   }
 }
 .entry__footer {}
