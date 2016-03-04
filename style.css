@@ -376,7 +376,7 @@ h6 {
 h1 small,
 h2 small,
 h3 small {
-  color: #ffba68;
+  color: #e6d1ba;
   font-size: 32px;
   font-size: 2rem;
   font-style: italic;
@@ -465,7 +465,7 @@ ul {
 
 blockquote {
   padding-left: 12.5px;
-  border-left: 5px solid #ffba68;
+  border-left: 5px solid #e6d1ba;
   color: black;
   margin-left: 0;
   margin-bottom: 0; }
@@ -571,7 +571,7 @@ hr {
     transition: all 0.4s; }
     .btn a:hover {
       text-decoration: none;
-      background-color: #ffba68; }
+      background-color: #e6d1ba; }
     .btn a:active,
     .btn a:focus {
       outline: none; }
@@ -590,7 +590,7 @@ hr {
     position: inherit; }
 
 .btn-checkout {
-  background-color: #ffba68; }
+  background-color: #e6d1ba; }
 
 .btn--inline-text {
   display: inline;
@@ -642,7 +642,7 @@ input[type="submit"].btn:hover {
   border: none; }
   .btn--info:hover {
     background-color: black;
-    color: #ffba68; }
+    color: #e6d1ba; }
 
 .btn--submit {
   background-color: #abd1b2;
@@ -653,7 +653,7 @@ input[type="submit"].btn:hover {
   padding: 16.66667px; }
   .btn--submit:hover {
     background-color: black;
-    color: #ffba68; }
+    color: #e6d1ba; }
 
 .btn--input {
   background-color: transparent;
@@ -662,7 +662,7 @@ input[type="submit"].btn:hover {
   font-size: 0.8125rem; }
   .btn--input:hover {
     color: #abd1b2;
-    border-color: #ffba68;
+    border-color: #e6d1ba;
     background-color: transparent; }
 
 /**
@@ -702,9 +702,9 @@ input[type="submit"].btn:hover {
   line-height: 4; }
 
 .btn--image {
-  background-color: #ffba68; }
+  background-color: #e6d1ba; }
   .btn--image:hover {
-    background-color: #ffc177; }
+    background-color: #ead8c5; }
   .btn--image a:hover {
     background-color: transparent; }
 
@@ -835,7 +835,7 @@ table {
   flex: 1 200px;
   justify-content: space-around;
   align-content: flex-start;
-  background-color: #ffba68;
+  background-color: #e6d1ba;
   padding: 8.33333px; }
   @media screen and (min-width: 1344px) {
     .site-header {
@@ -975,7 +975,7 @@ body {
 
 .sidebar-vertical {
   width: 20%;
-  background-color: #ffba68; }
+  background-color: #e6d1ba; }
 
 .sidebar-horizontal {
   width: 100%;
@@ -1010,7 +1010,7 @@ body {
   .posts-wrap-item:hover .btn {
     transition-property: background-color;
     transition-duration: .5s;
-    background-color: #ffba68; }
+    background-color: #e6d1ba; }
   .product-related .posts-wrap-item {
     max-width: 220px; }
     .product-related .posts-wrap-item .btn-singlecart {
@@ -1125,7 +1125,7 @@ body {
   font-size: 0.8125rem; }
 
 .main-post__content__entry a {
-  border-bottom: 2px dotted #ffba68;
+  border-bottom: 2px dotted #e6d1ba;
   padding-bottom: 3px; }
 
 .post--sidebar__meta-date {
@@ -1395,7 +1395,7 @@ body {
     .attachment-shop_thumbnail {
       min-width: 75px;
       padding: 4px;
-      background-color: #ffba68; } }
+      background-color: #e6d1ba; } }
 
 .product-total {
   width: 50%; }
@@ -1438,7 +1438,8 @@ body {
 
 .woocommerce-breadcrumb {
   flex-basis: 100%;
-  padding-bottom: 25px; }
+  padding-bottom: 25px;
+  color: #e6d1ba; }
 
 *[data-attribute_name] {
   margin-left: 25px;
@@ -1466,13 +1467,13 @@ body {
 Main navbar
 **********************/
 .hammenu {
-  background-color: #ffae4f;
+  background-color: #dfc5a7;
   border: none; }
   @media screen and (min-width: 600px) {
     .hammenu {
       display: none; } }
   .hammenu.active {
-    background-color: #ffa335; }
+    background-color: #d8b895; }
 
 @media screen and (max-width: 599px) {
   input + .site-nav__main {
@@ -1508,7 +1509,7 @@ input.active + .site-nav__main {
     flex: 0 1 150px;
     text-align: center; }
     .site-nav__main li:hover {
-      background-color: #ffae4f; }
+      background-color: #dfc5a7; }
     @media screen and (min-width: 1024px) {
       .site-nav__main li {
         margin: 12.5px 0; } }
@@ -1532,7 +1533,7 @@ input.active + .site-nav__main {
   min-width: 90%;
   display: block; }
   .site-nav__item a:hover {
-    background-color: #ffc682;
+    background-color: #edddcd;
     color: black; }
 
 .nav-secondary ul {
@@ -1544,7 +1545,7 @@ input.active + .site-nav__main {
 .nav-secondary li {
   width: 33.33%;
   display: table-cell;
-  color: #ffba68; }
+  color: #e6d1ba; }
   @media all and (min-width: 1280px) {
     .nav-secondary li {
       font-size: 25px;
@@ -1553,7 +1554,7 @@ input.active + .site-nav__main {
 .nav-secondary a {
   color: #e0dbd7; }
   .nav-secondary a:hover {
-    color: #ffba68; }
+    color: #e6d1ba; }
 
 .nav-footer {
   display: table; }

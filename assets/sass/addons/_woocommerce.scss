@@ -84,6 +84,9 @@
 .woocommerce-breadcrumb {
   flex-basis: 100%;
   padding-bottom: $padding_base/2;
+  color: $color-alt;
+  a {
+  }
   // background-color: $site-main-bgcolor;
 }
 
